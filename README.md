@@ -1,97 +1,84 @@
-# Java-Filmorate (API Filmorate)
-### Stack
+# Java-Filmorate
+### Стек:
 - Java 11
 - Spring Boot
+- PostgreSQL
 - JDBC
 - Maven
-- Lambok
-- JUnit
-- PostgreSQL
+- Lombok
+- JUnit 5
 
-# Group project 
-The Filmorate application should become a platform for communication and interaction between users. 
-Added the ability to make friends, leave reviews and recommend movies to each other.
-To help users navigate what is happening on the platform, we added an event feed. 
-Plus, we added a search — by keyword from the title or description of the movie.
+# Описание проекта
+Бэкэнд приложения для поиска подходящих к просмотру фильмов, а также для коммуникации между пользователями.
+Пользователи могут добавлять друг друга в друзья, оставлять комментарии к фильмам и рекомендовать фильмы друг другу.
+Чтобы помочь пользователям следить за новостями на платформе, добавлена лента событий.
+Также добавлен поиск - по ключевому слову из названия или описания фильма.
 
-# Team
-## Many thanks to the team with whom I had the opportunity to work on this project!
+# Команда
+## Большое спасибо членам команды, с которыми я имел возможность работать на этом проекте!
 ### GitHub:
-* [Alex-Naumenko1986](https://github.com/Alex-Naumenko1986)
 * [OrionSleeve](https://github.com/OrionSleeve)
 * [Nucleus1337](https://github.com/Nucleus1337)
 * [AndreiSmazin](https://github.com/AndreiSmazin)
+* [Buhanzaz](https://github.com/Buhanzaz)
 
-#### [Everyone's contribution to the project](https://github.com/users/Buhanzaz/projects/1)
+## Функционал приложения
 
-## Features
+### Фильмы
 
-### Films
+- Создание фильма
+- Обновление фильма
+- Получение фильма по ID
+- Добавление лайка фильму
+- Добавление дизлайка фильму
+- Получение списка самых популярных фильмов
+- Удаление фильма
 
-- Create a film
-- Update a film
-- Get a film by ID
-- Like a film
-- Unlike a film
-- Get popular films
-- Delete a film
+### Пользователи
 
-### Users
+- Добавление пользователя
+- Обновление пользователя
+- Получение списка всех пользователей
+- Получение пользователя по ID
+- Добавление пользователя в друзья
+- Удаление пользователя из друзей
+- Получение списка друзей пользователя
+- Получение списка общих друзей
+- Удаление пользователя
 
-- Add a user
-- Update a user
-- Get all users
-- Get a user by ID
-- Add a user as a friend
-- Remove a user from friends
-- Get user's friends
-- Get common friends with a user
-- Delete a user
+### Жанры
 
-### Genres
+- Получение списка всех жанров
+- Получение жанра по ID
+- 
+### Возрастной рейтинг
 
-- Get all genres
-- Get a genre by ID
+- Получение возрастного рейтинга по его ID
+- Получение всех возрастных рейтингов
 
-### Rating
+## Тестирование
 
-- Get an age rating by ID
-- Get all age ratings
+Функциональность приложения была протестирована при помощи библиотеки JUnit 5.
 
-## Testing
+## Запуск приложения
 
-The functionality has been tested using JUnit 5 in the `tests` package.
+Чтобы запустить это приложение, выполните следующие шаги:
 
-## Installation
-
-To use this API, follow these steps:
-
-1. Clone the repository: `git clone https://github.com/Buhanzaz/java-filmorate.git`
-2. Navigate to the project directory: `cd java-filmorate`
-3. Install any required dependencies: `npm install`
-
-## Diagram 
+1. TO DO!
+   
+## Диаграмма базы данных
 ![Database diagram](/DBDiogram.png)
 
-### Request Examples:
+### Примеры запросов
 1. Getting a user with ID = 1:
 ```sql
-   SELECT*  
+   SELECT *  
    FROM users  
    WHERE user_id = 1;
 ```
 3. Getting a film with ID = 10:
 ```sql
-   SELECT*  
+   SELECT *  
    FROM films  
    WHERE film_id = 10.
 ```
-## Contributing
-
-Contributions to this project are welcome. To contribute, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch: `git checkout -b my-branch`
-3. Make your changes and commit them: `git commit -m 'Add some feature'`
-4. Push to the branch: `git push origin my-branch`
-5. Submit a pull request.
