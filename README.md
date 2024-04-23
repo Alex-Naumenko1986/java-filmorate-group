@@ -64,19 +64,23 @@
 
 Чтобы запустить это приложение, выполните следующие шаги:
 
-1. TO DO!
+1. Скачайте репозиторий на компьютер: git pull https://github.com/Alex-Naumenko1986/java-filmorate-group.git
+2. Перейдите в папку с проектом: cd java_filmorate_group
+3. Cоздайте jar файлы: mvn package
+4. Перейдите в папку target: cd target
+5. Запустите приложение командой: java -jar filmorate-0.0.1-SNAPSHOT.jar
    
 ## Диаграмма базы данных
 ![Database diagram](/DBDiogram.png)
 
 ### Примеры запросов
-1. Getting a user with ID = 1:
+1. Получение пользователя с  ID = 1:
 ```sql
    SELECT *  
    FROM users  
    WHERE user_id = 1;
 ```
-3. Getting a film with ID = 10:
+2. Получение фильма с ID = 10:
 ```sql
    SELECT *  
    FROM films  
